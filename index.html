@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>37Design｜Growth Ops（毎日通知＋週1改善）</title>
+  <meta name="description" content="GA4・サーチコンソール・Clarityを見て毎日通知。週1回、2時間相当の小改善を提案→承認→実装まで。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">本文へ</a>
+
+  <header class="top">
+    <div class="container">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="brand__text">37Design</span>
+      </div>
+      <nav class="nav" aria-label="primary">
+        <a href="#service">サービス</a>
+        <a href="#plan">プラン</a>
+        <a href="#flow">流れ</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="kicker">Growth Ops</p>
+          <h1>毎日通知 × 週1改善で、Webを伸ばす。</h1>
+          <p class="lead">
+            GA4 / サーチコンソール / Clarity を毎日チェックし、3分で読める要点を通知。<br>
+            週1回、<span class="nowrap">人間換算2時間相当</span>の小改善を「提案→承認→実装」まで回します。
+          </p>
+          <div class="cta">
+            <a class="btn" href="#contact">相談する（テスト）</a>
+            <a class="btn btn--ghost" href="#plan">プランを見る</a>
+          </div>
+          <ul class="chips" aria-label="highlights">
+            <li>毎日：KPI/異常/今日の一手</li>
+            <li>週1：改善1件を実装まで</li>
+            <li>承認：メールでOK/修正/見送り</li>
+          </ul>
+        </div>
+        <aside class="card" aria-label="deliverables">
+          <h2 class="card__title">提供物（コア）</h2>
+          <ul class="list">
+            <li><strong>Daily DM</strong>：3分レポ（平日）</li>
+            <li><strong>Weekly Improvement</strong>：週1件（2h相当）</li>
+            <li><strong>ログ</strong>：変更点・ロールバック手順</li>
+          </ul>
+          <p class="note">※このページはテスト用LPです。文言・価格は調整します。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="container">
+        <h2>サービス概要</h2>
+        <div class="grid3">
+          <div class="tile">
+            <h3>見る（毎日）</h3>
+            <p>数字を固定フォーマットで圧縮。異常と優先度を明確化。</p>
+          </div>
+          <div class="tile">
+            <h3>決める（毎週）</h3>
+            <p>改善案は1件に絞る。狙うKPIと影響範囲をセットで提示。</p>
+          </div>
+          <div class="tile">
+            <h3>直す（実装）</h3>
+            <p>承認後に反映。変更ログと戻し方まで残す。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="section section--alt">
+      <div class="container">
+        <h2>プラン（テスト）</h2>
+        <div class="grid2">
+          <div class="tile">
+            <h3>Core</h3>
+            <ul class="list">
+              <li>Daily DM（平日）</li>
+              <li>週1改善（2h相当・実装まで）</li>
+              <li>承認：メール</li>
+            </ul>
+          </div>
+          <div class="tile">
+            <h3>Options</h3>
+            <ul class="list">
+              <li>ブログ/SEO（記事運用）</li>
+              <li>広告（所見→LP改善の優先度付け）</li>
+              <li>A/B（GrowthBook）</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">価格は稼働上限と責任範囲（SLA/運用）で設計します。</p>
+      </div>
+    </section>
+
+    <section id="flow" class="section">
+      <div class="container">
+        <h2>進め方</h2>
+        <ol class="steps">
+          <li><strong>導入</strong>：GA4/サチコ/Clarityの閲覧権限を付与</li>
+          <li><strong>毎日</strong>：DMで要点通知（KPI/異常/今日の一手）</li>
+          <li><strong>週次</strong>：改善提案→メール承認（OK/修正/見送り）</li>
+          <li><strong>反映</strong>：承認後に実装・ログ提出</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="grid2">
+          <div class="tile">
+            <h3>「2時間相当」って何？</h3>
+            <p>週1回、軽微改善を1件。範囲を固定し、積み上げで伸ばす設計です。</p>
+          </div>
+          <div class="tile">
+            <h3>勝手に本番反映される？</h3>
+            <p>しません。提案→承認（メール）→反映の順で進めます。</p>
+          </div>
+          <div class="tile">
+            <h3>何でもやってくれる？</h3>
+            <p>何でも屋にはしません。範囲外は別見積で明確にします。</p>
+          </div>
+          <div class="tile">
+            <h3>オプションは後で追加できる？</h3>
+            <p>できます。ブログ/SEO/広告/A/Bを必要に応じて追加します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>相談（テスト）</h2>
+        <p>
+          いまはテストLPです。導線は後で差し替えます。<br>
+          ひとまず「返信でOK」運用に合わせ、連絡先は仮で記載しています。
+        </p>
+        <div class="contact">
+          <div class="contact__box">
+            <div class="contact__label">連絡</div>
+            <div class="contact__value">メール / Discord（後で確定）</div>
+          </div>
+          <div class="contact__box">
+            <div class="contact__label">承認</div>
+            <div class="contact__value">メール返信：OK / 修正 / 見送り</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> 37Design</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
